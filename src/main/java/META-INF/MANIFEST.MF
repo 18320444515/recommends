@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Class-Path: hibernate-commons-annotations-5.0.1.Final.jar spring-boot-
+ starter-aop-2.0.1.RELEASE.jar jackson-databind-2.9.5.jar antlr-2.7.7.
+ jar jboss-logging-3.3.2.Final.jar spring-boot-2.0.1.RELEASE.jar qiniu
+ -java-sdk-7.2.11.jar tomcat-embed-core-8.5.29.jar lombok-1.16.6.jar j
+ ackson-annotations-2.9.0.jar classmate-1.3.4.jar spring-core-5.0.5.RE
+ LEASE.jar spring-boot-starter-web-2.0.1.RELEASE.jar javassist-3.22.0-
+ GA.jar spring-boot-starter-2.0.1.RELEASE.jar spring-webmvc-5.0.5.RELE
+ ASE.jar snakeyaml-1.19.jar spring-web-5.0.5.RELEASE.jar logback-class
+ ic-1.2.3.jar spring-boot-starter-logging-2.0.1.RELEASE.jar spring-dat
+ a-jpa-2.0.6.RELEASE.jar log4j-api-2.10.0.jar tomcat-embed-el-8.5.29.j
+ ar jandex-2.0.3.Final.jar spring-boot-autoconfigure-2.0.1.RELEASE.jar
+  happy-dns-java-0.1.6.jar hibernate-core-5.2.16.Final.jar jackson-cor
+ e-2.9.5.jar hibernate-jpa-2.1-api-1.0.0.Final.jar spring-aspects-5.0.
+ 5.RELEASE.jar validation-api-2.0.1.Final.jar HikariCP-2.7.8.jar aspec
+ tjweaver-1.8.13.jar spring-boot-starter-jdbc-2.0.1.RELEASE.jar spring
+ -jcl-5.0.5.RELEASE.jar javax.annotation-api-1.3.2.jar jackson-module-
+ parameter-names-2.9.5.jar jul-to-slf4j-1.7.25.jar gson-2.8.2.jar spri
+ ng-tx-5.0.5.RELEASE.jar hibernate-validator-6.0.9.Final.jar okio-1.13
+ .0.jar mysql-connector-java-5.1.46.jar spring-boot-starter-tomcat-2.0
+ .1.RELEASE.jar spring-jdbc-5.0.5.RELEASE.jar spring-context-5.0.5.REL
+ EASE.jar tomcat-embed-websocket-8.5.29.jar spring-boot-starter-json-2
+ .0.1.RELEASE.jar spring-expression-5.0.5.RELEASE.jar logback-core-1.2
+ .3.jar spring-data-commons-2.0.6.RELEASE.jar spring-aop-5.0.5.RELEASE
+ .jar javax.transaction-api-1.2.jar dom4j-1.6.1.jar spring-beans-5.0.5
+ .RELEASE.jar slf4j-api-1.7.25.jar jackson-datatype-jsr310-2.9.5.jar s
+ pring-boot-starter-data-jpa-2.0.1.RELEASE.jar log4j-to-slf4j-2.10.0.j
+ ar jackson-datatype-jdk8-2.9.5.jar okhttp-3.9.1.jar spring-orm-5.0.5.
+ RELEASE.jar
+Main-Class: com.wxtrick.recommends.RecommendsApplication
+

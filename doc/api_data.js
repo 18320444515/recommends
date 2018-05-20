@@ -1,0 +1,399 @@
+define({ "api": [
+  {
+    "type": "get",
+    "url": "/get/about",
+    "title": "获取关于信息",
+    "group": "About",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "null",
+            "description": "<p>此接口无需传参</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n        \"resultCode\": 200,\n        \"resultMsg\": \"成功\",\n        \"data\": [\n        {\n        \"id\": 1,\n        \"version\": \"v0.0.0\",\n        \"mail\": \"326640559@qq.com\"\n        }\n        ]\n        }",
+          "type": "json"
+        }
+      ],
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "resultCode",
+            "description": "<p>响应结果</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "resultMsg",
+            "description": "<p>错误信息</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>主体信息</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./src/main/java/com/wxtrick/recommends/doc/AboutDoc.java",
+    "groupTitle": "About",
+    "name": "GetGetAbout"
+  },
+  {
+    "type": "post",
+    "url": "/update/about",
+    "title": "修改关于信息",
+    "group": "About",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "version",
+            "description": "<p>版本号</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "mail",
+            "description": "<p>联系邮箱</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Request:",
+          "content": "{\n    version:V0.0.1\n    mail:326640559@qq.com\n}",
+          "type": "json"
+        },
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": {\n    \"id\": 1,\n    \"version\": \"V0.0.1\",\n    \"mail\": \"326640559@qq.com\"\n    }\n    }",
+          "type": "json"
+        }
+      ],
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "resultCode",
+            "description": "<p>响应结果</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "resultMsg",
+            "description": "<p>错误信息</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>主体信息</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./src/main/java/com/wxtrick/recommends/doc/AboutDoc.java",
+    "groupTitle": "About",
+    "name": "PostUpdateAbout"
+  },
+  {
+    "type": "get",
+    "url": "/get/movie",
+    "title": "获取电影信息",
+    "group": "Movie",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "null",
+            "description": "<p>此接口无需传参</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": [\n        {\n        \"id\": 2,\n        \"doubanId\": 2257094,\n        \"qiniuUrl\": \"1\",\n        \"reason\": \"很阳很活泼的女主，\\r\\n很美丽的精神，最终这故事连回忆都没有给他们留下。但观众们久久不能忘记。\"\n        }\n        ]\n        }",
+          "type": "json"
+        }
+      ],
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "resultCode",
+            "description": "<p>响应结果</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "resultMsg",
+            "description": "<p>错误信息</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>主体信息</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./src/main/java/com/wxtrick/recommends/doc/MovieDoc.java",
+    "groupTitle": "Movie",
+    "name": "GetGetMovie"
+  },
+  {
+    "type": "post",
+    "url": "/add/movie",
+    "title": "添加电影信息",
+    "group": "Movie",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "doubanId",
+            "description": "<p>豆瓣对应id</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "reason",
+            "description": "<p>推荐理由</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "File",
+            "optional": false,
+            "field": "moviePicture",
+            "description": "<p>电影海报</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Request:",
+          "content": "{\n    doubanId:2257094,\n    reason:很阳很活泼的女主，↵很美丽的精神，最终这故事连回忆都没有给他们留下。但观众们久久不能忘记。\n    (还有 moviePicture)\n}",
+          "type": "json"
+        },
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": {\n    \"id\": 12,\n    \"doubanId\": 2257094,\n    \"qiniuUrl\": \"http://p7xnxhjxx.bkt.clouddn.com/Fj-6lmVFGQWrragNvLXVrEGyCpvU\",\n    \"reason\": \"很阳很活泼的女主，\\r\\n很美丽的精神，最终这故事连回忆都没有给他们留下。但观众们久久不能忘记。\"\n    }\n    }",
+          "type": "json"
+        }
+      ],
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "resultCode",
+            "description": "<p>响应结果</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "resultMsg",
+            "description": "<p>错误信息</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>主体信息</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./src/main/java/com/wxtrick/recommends/doc/MovieDoc.java",
+    "groupTitle": "Movie",
+    "name": "PostAddMovie"
+  },
+  {
+    "type": "post",
+    "url": "/delete/movie",
+    "title": "删除电影信息",
+    "group": "Movie",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "guessID",
+            "description": "<p>要删除的数据对应的id，保密作用</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Request:",
+          "content": "{\n    guessID:2\n}",
+          "type": "json"
+        },
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": null\n    }",
+          "type": "json"
+        }
+      ],
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "resultCode",
+            "description": "<p>响应结果</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "resultMsg",
+            "description": "<p>错误信息</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>主体信息</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./src/main/java/com/wxtrick/recommends/doc/MovieDoc.java",
+    "groupTitle": "Movie",
+    "name": "PostDeleteMovie"
+  },
+  {
+    "type": "post",
+    "url": "/update/movie",
+    "title": "修改电影信息",
+    "group": "Movie",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Integer",
+            "optional": false,
+            "field": "id",
+            "description": "<p>数据对应id</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "doubanId",
+            "description": "<p>电影对应豆瓣id号</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "reason",
+            "description": "<p>推荐理由</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Request:",
+          "content": "{\n    id:2,\n    doubanId:2257094,\n    reason:\"aaaaaaaaaaaaaaaa很阳很活泼的女主，\\r\\n很美丽的精神，最终这故事连回忆都没有给他们留下。但观众们久久不能忘记。\"\n}",
+          "type": "json"
+        },
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"resultCode\": 200,\n    \"resultMsg\": \"成功\",\n    \"data\": {\n    \"id\": 2,\n    \"doubanId\": 2257094,\n    \"qiniuUrl\": \"1\",\n    \"reason\": \"\\\"aaaaaaaaaaaaaaaa很阳很活泼的女主，\\\\r\\\\n很美丽的精神，最终这故事连回忆都没有给他们留下。但观众们久久不能忘记。\\\"\"\n    }\n    }",
+          "type": "json"
+        }
+      ],
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Integer",
+            "optional": false,
+            "field": "resultCode",
+            "description": "<p>响应结果</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "resultMsg",
+            "description": "<p>错误信息</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>主体信息</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "./src/main/java/com/wxtrick/recommends/doc/MovieDoc.java",
+    "groupTitle": "Movie",
+    "name": "PostUpdateMovie"
+  }
+] });
