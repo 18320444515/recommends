@@ -25,7 +25,7 @@ import java.util.Optional;
  * @date 2018-04-29 17:00
  */
 @RestController
-@RequestMapping("/update")
+@RequestMapping("/recommends/update")
 @Slf4j
 public class UpdateController {
     @Autowired

@@ -21,7 +21,7 @@ import java.io.InputStream;
  * @date 2018-04-29 01:45
  */
 @RestController
-@RequestMapping("/add")
+@RequestMapping("/recommends/add")
 @Slf4j
 public class AddController {
 

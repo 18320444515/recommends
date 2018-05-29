@@ -25,7 +25,12 @@ qiniu:
 
 
 server:
-  #context-path: /recommends
-  port: 8080
   servlet:
-    context-path: /recommends
+    #context-path: /recommends
+    context-path: /
+ # port: 8080
+  port: 443
+  ssl:
+      key-store: C:\Program Files\Apache Software Foundation\Tomcat 7.0\conf\cert\1525688816500.pfx
+      key-store-password: 1525688816500
+      keyStoreType: PKCS12

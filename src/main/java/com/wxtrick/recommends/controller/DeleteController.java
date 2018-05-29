@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2018-04-29 17:32
  */
 @RestController
-@RequestMapping("/delete")
+@RequestMapping("/recommends/delete")
 @Slf4j
 public class DeleteController {
     @Autowired

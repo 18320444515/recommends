@@ -24,7 +24,7 @@ import java.util.Iterator;
  */
 @Slf4j
 @RestController
-@RequestMapping("/get")
+@RequestMapping("/recommends/get")
 public class GetController {
 
     @Autowired
